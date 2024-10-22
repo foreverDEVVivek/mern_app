@@ -1,0 +1,331 @@
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+
+.section-registration{
+    background-color: #091057;
+}
+
+.grid-two-cols{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap: 15px;
+}
+.container{
+    padding: 2.5rem 5rem;
+}
+.registration-form{
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+.registration-form h1{
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: white;
+    font-family: "Libre Bodoni", serif;
+    letter-spacing: 0.165rem;
+    text-align: center;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.signup-form div{
+   display: grid;
+   /* grid-template-rows: repeat(3,1fr); */
+   align-items: center;
+   margin-top: 1.2rem;
+   gap: 10px;
+}
+.signup-form div label{
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+.signup-form div input{
+    border: 1px solid blue;
+    height: 2.2rem;
+    width: auto;
+    border-radius: 0.35rem;
+    -webkit-border-radius: 0.35rem;
+    -moz-border-radius: 0.35rem;
+    -ms-border-radius: 0.35rem;
+    -o-border-radius: 0.35rem;
+    padding: 0.29rem;
+    font-size: 1.05rem;
+    
+}
+.btn{
+    height: 2.6rem;
+    width: 8rem;
+    border-radius: 1.35rem;
+    -webkit-border-radius: 1.35rem;
+    -moz-border-radius: 1.35rem;
+    -ms-border-radius: 1.35rem;
+    -o-border-radius: 1.35rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.btn:hover{
+    background:#EC8305;
+}
+.home-react-section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content:center;
+    color: white;
+    padding-left: 2.6rem;
+    gap: 15px;
+}
+.home-react-section h1{
+   height: 3.0rem;
+   font-size: 2.2rem;
+   width: 100%;
+   text-align: start;
+   text-decoration: underline;
+   
+}
+.home-react-section p{
+    text-transform: capitalize;
+    word-spacing: .25rem;
+    line-height: 1.45;
+    letter-spacing: 0.07rem;
+}
+.btn-home{
+    margin-top: 2.05rem;
+}
+
+textarea{
+    border-radius: 0.35rem;
+    -webkit-border-radius: 0.35rem;
+    -moz-border-radius: 0.35rem;
+    -ms-border-radius: 0.35rem;
+    -o-border-radius: 0.35rem;
+    padding: 0.29rem;
+    font-size: 1.05rem;
+}
+iframe{
+    width: 100%;
+}
+/* Error page css */
+.error-page {
+  background-color: #333333;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  font-family: "Arial Black";
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-num {
+  font-size: 8em;
+}
+
+.eye {
+  background: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+.eye::after {
+  background: #000;
+  border-radius: 50%;
+  bottom: 56.1px;
+  content: "";
+  height: 33px;
+  position: absolute;
+  right: 33px;
+  width: 33px;
+}
+
+p {
+  margin-bottom: 4em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover {
+  color: lightgray;
+}
+
+/* About Us Section */
+.about-us-section{
+  padding: 2.2rem;
+}
+.about-us-section p{
+  margin: 0;
+  text-transform: capitalize;
+  word-spacing: .25rem;
+  line-height: 1.45;
+  color: white;
+  letter-spacing: 0.07rem;
+}
+.about-us-section h1{
+  color: white;
+  margin-bottom: 1.2rem;
+}
+
+/* Services Page Css */
+.grid-three-cols{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: 100vh;
+  width: 100vw;
+}
+.service{
+  height: 250px;
+  width: 250px;
+
+}
+
+/* just checkout */
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 4rem 5rem;
+  background:#091057;
+  /* padding: 0; */
+  list-style-type: none;
+}
+
+.cards li{
+  border: 1px solid white;
+  border-radius:calc(var(--curve) * 1px);
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+.card {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+  -webkit-border-radius: calc(var(--curve) * 1px);
+  -moz-border-radius: calc(var(--curve) * 1px);
+  -ms-border-radius: calc(var(--curve) * 1px);
+  -o-border-radius: calc(var(--curve) * 1px);
+}
+
+.card__image {      
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: var(--surface-color);      
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}       
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;      
+  border-radius: 50%;      
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 .3em;
+  color: #6A515E;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";  
+  font-size: .8em; 
+  color: #D7BDCA;  
+}
+
+.card__status {
+  font-size: .8em;
+  color: #D7BDCA;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #D7BDCA;
+  font-family: "MockFlowFont";   
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}    
+
+/* Toast class */
+
+.toastBody{
+  font-family: "Atlas Grotesk Web",Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 1rem !important;
+}

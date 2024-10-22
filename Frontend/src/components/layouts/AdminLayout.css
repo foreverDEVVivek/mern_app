@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Container */
+.admin-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    margin-top: 50px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+/* Navbar List */
+.admin-nav ul {
+    list-style-type: none;
+}
+
+/* Navbar Links */
+.admin-nav ul li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+/* Hover Effect */
+.admin-nav ul li a:hover {
+    background-color: #555;
+}
