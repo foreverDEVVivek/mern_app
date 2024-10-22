@@ -3,7 +3,7 @@
 
 ## Description
 
-This is a **MERN** (MongoDB, Express, React, Node.js) stack web application that [briefly describe what your project does]. The project is a full-stack web application that demonstrates CRUD operations, user authentication, and API integration using REST or GraphQL.
+This is a **MERN** (MongoDB, Express, React, Node.js) stack web application that describe how can we connect our Frontend with Backend. The project is a full-stack web application that demonstrates CRUD operations, user authentication, and API integration using REST or GraphQL.
 
 ## Features
 
@@ -13,7 +13,6 @@ This is a **MERN** (MongoDB, Express, React, Node.js) stack web application that
 - **Node.js** for server-side JavaScript execution
 - User Authentication (JWT, OAuth, etc.)
 - RESTful API / GraphQL API
-- [Any other key features]
 
 ## Table of Contents
 
@@ -31,23 +30,23 @@ To get started with the project, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/username/repo-name.git
+   git clone https://github.com/username/mern_app.git
    ```
 
 2. **Navigate to the project directory**:
    ```bash
-   cd repo-name
+   cd mern_app
    ```
 
 3. **Install backend dependencies**:
    ```bash
-   cd backend
+   cd Server
    npm install
    ```
 
 4. **Install frontend dependencies**:
    ```bash
-   cd ../frontend
+   cd ../Frontend
    npm install
    ```
 
@@ -56,14 +55,14 @@ To get started with the project, follow these steps:
 6. **Run the project**:
    - For **backend**:
      ```bash
-     cd backend
-     npm run dev
+     cd Server
+     node server.js
      ```
 
    - For **frontend**:
      ```bash
-     cd frontend
-     npm start
+     cd Frontend
+     npm run dev
      ```
 
 ## Technologies Used
@@ -74,7 +73,7 @@ To get started with the project, follow these steps:
 - **Node.js**: JavaScript runtime for server-side development
 - **Mongoose**: ODM for MongoDB
 - **JWT (JSON Web Tokens)**: For user authentication
-- **Redux** (optional): For state management in React
+- **Hooks** : For state management in React
 
 ## Project Structure
 
@@ -83,20 +82,20 @@ The basic structure of the MERN project:
 ```
 /mern_project
 │
-├── /backend              # Backend code (Node.js, Express)
+├── /Server               # Backend code (Node.js, Express)
 │   ├── /config           # Configuration (e.g., database, environment)
 │   ├── /controllers      # API controllers
 │   ├── /models           # Mongoose models
 │   ├── /routes           # Express routes
 │   └── /middlewares      # Custom middleware (auth, etc.)
 │
-├── /frontend             # Frontend code (React.js)
+├── /Frontend             # Frontend code (React.js)
 │   ├── /public           # Public assets (index.html, images)
 │   ├── /src
 │   │   ├── /components   # Reusable React components
 │   │   ├── /pages        # Pages (e.g., Home, Dashboard)
-│   │   ├── /redux        # Redux setup (if applicable)
-│   │   ├── /services     # API calls
+│   │   ├── /store        # Props setup (if applicable)
+│   │   ├── /public       # Static Files
 │   │   └── App.js        # Main App component
 │
 └── /readme               # README file and other docs
@@ -108,9 +107,9 @@ Create a `.env` file in the root directory of both **backend** and **frontend** 
 
 ### Backend `.env`
 ```bash
-PORT=5000
+DB_PASSWORD=****
 MONGO_URI=mongodb+srv://your-mongo-db-uri
-JWT_SECRET=your-jwt-secret
+JWT_SECRET_KEY=your-jwt-secret
 ```
 
 ### Frontend `.env`
@@ -126,13 +125,13 @@ In the project directory, you can run the following commands:
 
 ### Backend Scripts
 
-- **`npm run dev`**: Runs the backend in development mode.
-- **`npm start`**: Runs the backend in production mode.
+- **`nodemon server.js`**: Runs the backend in development mode.
+- **`node server.js`**: Runs the backend in production mode.
 
 ### Frontend Scripts
 
-- **`npm start`**: Runs the React frontend in development mode.
-- **`npm run build`**: Builds the React frontend for production.
+- **`npm run dev`**: Runs the React frontend in development mode.
+- **`npm run dev`**: Builds the React frontend for production.
 
 ## Contributing
 
@@ -155,4 +154,5 @@ If you want to contribute to this project:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is Open-Source Contribution, So you can republish and modify it.
+Feel free to modify.
